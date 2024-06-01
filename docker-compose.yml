@@ -1,0 +1,26 @@
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    ports:
+      - "3306:3306"  # Expose MySQL port to the host machine
+    environment:
+      - MYSQL_DATABASE=exoplanet
+      - MYSQL_ROOT_PASSWORD=pwd   
+    volumes:
+      - ./mysql_data:/var/lib/mysql  # Persist MySQL data
+
+  api:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: container_exoplanet
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    image: image_exoplanet
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql_data:

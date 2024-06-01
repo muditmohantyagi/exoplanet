@@ -1,0 +1,1 @@
+{"level":"ERROR","time":"2024-05-15T09:54:39.943+0530","callerKey":"controller/PostController.go:33","message":"Error 1146 (42S02): Table 'post.posts' doesn't exist"}
