@@ -7,9 +7,8 @@ this microservice is developed using
 5) test cases
 6) docker
 
-EndPoints:
-1)
-POST: localhost:8080/api/exoplanet/add_exoplanet
+# EndPoints:
+1) POST: localhost:8080/api/exoplanet/add_exoplanet
 {
     "Name": "GasGiant 2",
     "Description": "i am GasGiant 2",
@@ -18,7 +17,7 @@ POST: localhost:8080/api/exoplanet/add_exoplanet
     "Mass": 0,
     "Type": "GasGiant"
 }
-2)PUT: localhost:8080/api/exoplanet/update_exoplanet
+2) PUT: localhost:8080/api/exoplanet/update_exoplanet
 {
     "Id": 3,
     "Name": "GasGiant update again",
@@ -33,12 +32,12 @@ POST: localhost:8080/api/exoplanet/add_exoplanet
     "SortByRadius":"desc",
     "FilterBymass":0
 }
-4)GET: localhost:8080/api/exoplanet/list_exoplanet_byid/1
+
+4) GET: localhost:8080/api/exoplanet/list_exoplanet_byid/1
 
 5) DELET: localhost:8080/api/exoplanet/delete_exoplanet_byid/8
 
-6)GET: localhost:8080/api/exoplanet/fuel_estimation
-
+6) GET: localhost:8080/api/exoplanet/fuel_estimation
 {
     "ExoPlanetId": 4,
     "CrewCapacity": 3
