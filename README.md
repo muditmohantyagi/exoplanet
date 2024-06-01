@@ -4,8 +4,9 @@ this microservice is developed using
 2) gorm(MYSQL) and mysql is running in docker
 3) golang
 4) validation
-5) test cases
-6) docker
+5) Listing all exoplanet with  sorting or filter
+6) test cases
+7) docker
 
 # EndPoints:
 1) POST: localhost:8080/api/exoplanet/add_exoplanet
